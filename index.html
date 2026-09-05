@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dr. Belajar — Bimbingan Privat Online Edukatif, Menyenangkan & Bermakna</title>
+  <meta name="description" content="dr. Belajar adalah lembaga bimbingan privat online 1-on-1 dengan metode interaktif, seru, dan berbobot dari tutor kampus top (UI, ITB, UGM). Tagline: Belajar Bermakna!">
+  <meta name="keywords" content="dr belajar, les privat online, bimbel utbk snbt, privat sd smp sma, belajar bermakna, les kedokteran, bimbel gen-z">
+  
+  <!-- Favicon / Brand Symbol -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome 6 for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP TICKER / RUNNING ANNOUNCEMENTS
+       ========================================================================== -->
+  <div class="top-ticker" id="topTicker">
+    <div class="ticker-track">
+      <div class="ticker-item">
+        <span class="ticker-tag">📢 EVENT AKBAR</span>
+        <span>Tryout Nasional Akbar SNBT & Kedokteran 2024 Dibuka! Total Beasiswa Rp 50 Juta 🎓</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-tag">🇮🇩 SEMANGAT MERDEKA</span>
+        <span>Spesial Pelajar Indonesia: Diskon 35% Paket Privat Semester Baru & Free Konsul PR 24/7!</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-tag">💼 OPREC TUTOR</span>
+        <span>Lowongan Tutor Matematika, Kimia, & Fisika (Mahasiswa/Alumni UI, ITB, UGM, Unair). Daftar Sekarang!</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-tag">⭐ PRESTASI SISWA</span>
+        <span>Alhamdulillah! 142 Siswa dr. Belajar Sukses Tembus SNBT PTN Impian Tahun Ini! 🎉</span>
+      </div>
+      <!-- Duplicate items for seamless continuous looping -->
+      <div class="ticker-item">
+        <span class="ticker-tag">📢 EVENT AKBAR</span>
+        <span>Tryout Nasional Akbar SNBT & Kedokteran 2024 Dibuka! Total Beasiswa Rp 50 Juta 🎓</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-tag">🇮🇩 SEMANGAT MERDEKA</span>
+        <span>Spesial Pelajar Indonesia: Diskon 35% Paket Privat Semester Baru & Free Konsul PR 24/7!</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */ -->
+  <header class="navbar" id="mainNav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="logoLink">
+        <div class="logo-badge">
+          <i class="fa-solid fa-stethoscope"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">dr. Belajar</span>
+          <span class="logo-tagline">Belajar Bermakna ✦ Privat Online</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#hero">Beranda</a></li>
+          <li class="nav-item"><a href="#pengumuman">Pengumuman</a></li>
+          <li class="nav-item"><a href="#pojok-genz">Pojok Gen-Z</a></li>
+          <li class="nav-item"><a href="#program-kelas">Kelas Online</a></li>
+          <li class="nav-item"><a href="#tutor-section">Tutor Hebat</a></li>
+          <li class="nav-item"><a href="#testimoni">Testimoni</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-sm" id="btnJoinTutorNav" onclick="openModal('modalTutor')">
+          <i class="fa-solid fa-graduation-cap"></i> Gabung Tutor
+        </button>
+        <button class="btn btn-primary btn-sm" id="btnRegisterNav" onclick="openModal('modalDaftar')">
+          <i class="fa-solid fa-rocket"></i> Daftar Kelas
+        </button>
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Buka Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (Headline Utama: "Belajar Bermakna")
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          <span>#1 Lembaga Privat Online Edukatif & Menyenangkan</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-highlight">belajar bermakna</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Selamat tinggal rumus hafalan kaku dan belajar penuh stres! Di <strong>dr. Belajar</strong>, setiap sesi privat online dirancang interaktif, santai berenergi, dan membangun pemahaman konsep yang mendalam bersama tutor-tutor muda inspiratif dari kampus terbaik nusantara.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg" id="btnHeroDaftar" onclick="openModal('modalDaftar')">
+            <i class="fa-solid fa-paper-plane"></i> Daftar Kelas
+          </button>
+          <button class="btn btn-trial btn-lg" id="btnHeroTrial" onclick="openModalWithPlan('Free Trial Class (1x Sesi Percobaan Gratis)')">
+            <span class="trial-badge">GRATIS</span>
+            <i class="fa-solid fa-gift"></i> Free Trial Class
+          </button>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20dr.%20Belajar!%20Saya%20tertarik%20tanya%20program%20privat%20online%20dan%20Free%20Trial%20Class" 
+             target="_blank" class="btn btn-whatsapp btn-lg" id="btnHeroWA">
+            <i class="fa-brands fa-whatsapp"></i> Hubungi Kami
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">4.98 / 5.0</span>
+            <span class="hero-stat-label">⭐ Rating dari 2.800+ Siswa</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">94.6%</span>
+            <span class="hero-stat-label">🎯 Lolos PTN & Sekolah Unggulan</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">1-on-1</span>
+            <span class="hero-stat-label">🩺 Metode Personal & Bebas Bertanya</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero 3D Graphic Mockup & Visual -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-card-frame">
+          <img src="assets/images/hero-mascot.jpg" alt="dr. Belajar Edukatif & Menyenangkan" class="hero-image-main">
+          
+          <!-- Floating Playful Stickers -->
+          <div class="sticker sticker-top-left">
+            <div class="sticker-icon pink">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div>
+              <div class="sticker-title">100% Paham Konsep!</div>
+              <div class="sticker-sub">No overthinking, no panik fisika 💡</div>
+            </div>
+          </div>
+
+          <div class="sticker sticker-bottom-right">
+            <div class="sticker-icon blue">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div>
+              <div class="sticker-title">Tutor Almamater Top 🇮🇩</div>
+              <div class="sticker-sub">UI, ITB, UGM, Unair & UNAIR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DYNAMIC BANNER SECTION (Pusat Pengumuman, Hari Besar, Lowongan Tutor)
+       ========================================================================== -->
+  <section class="container" id="pengumuman">
+    <div class="announcement-section">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-bullhorn"></i> Live Updates</span>
+        <h2 class="section-title">Papan Informasi & Pengumuman Dinamis</h2>
+        <p class="section-subtitle">Pantau informasi kegiatan belajar, perayaan hari besar nasional, dan kesempatan bergabung sebagai pengajar muda berbakat.</p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div class="banner-tabs-nav">
+        <button class="tab-btn active" id="tabBtnEvent" onclick="switchBannerTab('event')">
+          <i class="fa-solid fa-calendar-check"></i> Event & Tryout Akbar
+        </button>
+        <button class="tab-btn" id="tabBtnNasional" onclick="switchBannerTab('nasional')">
+          <i class="fa-solid fa-flag"></i> Hari Besar & Inspirasi Nusantara
+        </button>
+        <button class="tab-btn" id="tabBtnOprec" onclick="switchBannerTab('oprec')">
+          <i class="fa-solid fa-user-plus"></i> Lowongan Tutor (Oprec)
+        </button>
+      </div>
+
+      <!-- Tab 1: Event & Tryout Akbar -->
+      <div class="banner-card active" id="bannerCardEvent">
+        <div class="banner-body">
+          <div class="banner-badge-row">
+            <span class="banner-pill" style="background: rgba(56, 189, 248, 0.25); color: #38BDF8;">🔥 LIVE REGISTRATION</span>
+            <span class="banner-pill">Semua Pelajar Indonesia</span>
+          </div>
+          <h3 class="banner-title">Tryout Nasional Akbar SNBT & Olimpiade dr. Belajar 2024</h3>
+          <p class="banner-desc">
+            Uji kesiapanmu menembus jurusan kedokteran, teknik, dan kampus favorit! Simulasi sistem CAT persis tes resmi BPPP, pembahasan video interaktif, dan analisis ranking nasional per provinsi.
+          </p>
+
+          <!-- Live Countdown Box -->
+          <div class="countdown-box">
+            <div class="time-slot">
+              <div class="time-number" id="countdownDays">14</div>
+              <div class="time-label">Hari</div>
+            </div>
+            <div class="time-slot">
+              <div class="time-number" id="countdownHours">08</div>
+              <div class="time-label">Jam</div>
+            </div>
+            <div class="time-slot">
+              <div class="time-number" id="countdownMinutes">42</div>
+              <div class="time-label">Menit</div>
+            </div>
+            <div class="time-slot">
+              <div class="time-number" id="countdownSeconds">19</div>
+              <div class="time-label">Detik</div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" onclick="openModal('modalDaftar')">
+              <i class="fa-solid fa-trophy"></i> Daftar Tryout Gratis Sekarang
+            </button>
+          </div>
+        </div>
+
+        <div class="banner-media">
+          <span class="indo-ribbon">
+            <i class="fa-solid fa-award"></i> Total Beasiswa 50 Juta
+          </span>
+          <img src="assets/images/banner-event.jpg" alt="Tryout Nasional dr. Belajar" class="banner-img">
+        </div>
+      </div>
+
+      <!-- Tab 2: Hari Besar & Inspirasi Nusantara -->
+      <div class="banner-card" id="bannerCardNasional">
+        <div class="banner-body" style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);">
+          <div class="banner-badge-row">
+            <span class="banner-pill" style="background: rgba(239, 68, 68, 0.25); color: #F87171;">🇮🇩 HARI BESAR NASIONAL</span>
+            <span class="banner-pill">Refleksi Pendidikan Indonesia</span>
+          </div>
+          <h3 class="banner-title">Membangun Karakter Cerdas Berjiwa Nusantara</h3>
+          <p class="banner-desc">
+            Mengutip petuah luhur Bapak Pendidikan Nasional, <strong>Ki Hajar Dewantara</strong>: <em>"Ing ngarsa sung tulada, ing madya mangun karsa, tut wuri handayani"</em>. Di dr. Belajar, kami mendampingi generasi muda tidak hanya cerdas angka, tetapi juga memiliki akhlak mulia dan kecintaan mendalam pada tanah air.
+          </p>
+          <div style="background: rgba(255,255,255,0.08); padding: 16px; border-radius: 16px; margin-bottom: 24px; border-left: 4px solid #EF4444;">
+            <p style="font-size: 0.92rem; color: #E2E8F0;">
+              ✨ <strong>Promo Kemerdekaan & Hari Guru:</strong> Dapatkan subsidi belajar hingga 40% bagi putra-putri guru, tenaga medis, dan pelajar berprestasi daerah 3T di seluruh Indonesia.
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-secondary" onclick="openModal('modalDaftar')">
+              <i class="fa-solid fa-gift"></i> Klaim Beasiswa Nusantara
+            </button>
+          </div>
+        </div>
+
+        <div class="banner-media">
+          <span class="indo-ribbon">
+            <i class="fa-solid fa-flag"></i> Karya Anak Bangsa 🇮🇩
+          </span>
+          <img src="assets/images/banner-event.jpg" alt="Peringatan Hari Besar Edukasi" class="banner-img">
+        </div>
+      </div>
+
+      <!-- Tab 3: Lowongan Tutor (Oprec) -->
+      <div class="banner-card" id="bannerCardOprec">
+        <div class="banner-body" style="background: linear-gradient(135deg, #064E3B 0%, #065F46 100%);">
+          <div class="banner-badge-row">
+            <span class="banner-pill" style="background: rgba(16, 185, 129, 0.25); color: #34D399;">💼 WE ARE HIRING!</span>
+            <span class="banner-pill">Batch Semester Ganjil</span>
+          </div>
+          <h3 class="banner-title">Bergabung Menjadi "Dokter Belajar" & Inspirasi Siswa</h3>
+          <p class="banner-desc">
+            Kamu mahasiswa berprestasi atau alumni PTN ternama yang ramah, komunikatif, dan punya passion mendidik? Jadilah bagian dari pengajar hebat di dr. Belajar. Jam mengajar fleksibel (100% remote online), insentif menarik, dan kesempatan mentoring jejaring nasional.
+          </p>
+          <ul style="list-style: none; margin-bottom: 24px; color: #D1FAE5; font-size: 0.92rem;">
+            <li style="margin-bottom: 8px;"><i class="fa-solid fa-check-circle" style="color: #34D399;"></i> <strong>Posisi Terbuka:</strong> Tutor Matematika, Fisika, Biologi, Kimia, TPS UTBK, & Bahasa Inggris.</li>
+            <li style="margin-bottom: 8px;"><i class="fa-solid fa-check-circle" style="color: #34D399;"></i> <strong>Kualifikasi:</strong> IPK min. 3.30, sabar menghadapi siswa, mampu menyederhanakan materi rumit.</li>
+          </ul>
+          <div>
+            <button class="btn btn-primary" onclick="openModal('modalTutor')" style="background: #10B981; border: none;">
+              <i class="fa-solid fa-user-graduate"></i> Kirim Lamaran Tutor Sekarang
+            </button>
+          </div>
+        </div>
+
+        <div class="banner-media">
+          <img src="assets/images/tutor-dr-belajar.jpg" alt="Lowongan Tutor dr. Belajar" class="banner-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       POJOK GEN-Z: MEME EDUKATIF & MOTIVASI BERMAKNA
+       ========================================================================== -->
+  <section class="genz-section" id="pojok-genz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-fire"></i> Edu-Meme & Vibes Santai</span>
+        <h2 class="section-title">Pojok Gen-Z: Belajar Santai, Makna Mendalam</h2>
+        <p class="section-subtitle">Siapa bilang belajar harus tegang dan bikin overthinking? Di sini tempatnya recharge motivasi, senyum tipis, dan dapat inspirasi nyata!</p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Card 1: Interactive Mood Booster Generator -->
+        <div class="bento-card bento-booster">
+          <div class="booster-header">
+            <div>
+              <span class="badge-pulse" style="display:inline-block; margin-right: 6px;"></span>
+              <strong style="font-size: 1.1rem; color: var(--primary-purple);">Mood Booster Generator</strong>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Klik untuk dapatkan asupan semangat harianmu!</div>
+            </div>
+            <button class="btn btn-primary btn-sm" id="btnShuffleBooster" onclick="generateNewBooster()">
+              <i class="fa-solid fa-rotate"></i> Acak Motivasi
+            </button>
+          </div>
+
+          <div class="booster-quote-box" id="boosterQuoteBox">
+            <div class="booster-text" id="boosterQuoteText">
+              "Ingat, rumus fisika itu nggak gigit. Yang bikin pusing itu kalau kamu belajar sendiri sambil scroll TikTok jam 2 pagi. Tarik napas, pelajari satu konsep sekarang!"
+            </div>
+            <div class="booster-author" id="boosterQuoteAuthor">
+              <i class="fa-solid fa-lightbulb" style="color: #F59E0B;"></i> dr. Belajar Daily Reminder 💡
+            </div>
+          </div>
+
+          <div class="booster-actions">
+            <button class="btn btn-secondary btn-sm" onclick="copyBoosterQuote()">
+              <i class="fa-regular fa-copy"></i> Salin Quote
+            </button>
+            <span style="font-size: 0.8rem; color: var(--text-muted); align-self: center;">
+              ⚡ Disukai lebih dari 1.400+ pejuang ujian
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 2: Indonesian & Islamic Wisdom -->
+        <div class="bento-card bento-wisdom">
+          <div class="wisdom-badge">
+            <i class="fa-solid fa-mosque"></i> Mutiara Hikmah Edukasi
+          </div>
+          <div class="arabic-quote">مَنْ جَدَّ وَجَدَ</div>
+          <p style="font-weight: 700; color: #0284C7; margin-bottom: 4px;">"Man Jadda Wajada"</p>
+          <p class="wisdom-meaning">
+            "Barangsiapa bersungguh-sungguh, maka dia pasti akan berhasil."
+          </p>
+          <div class="indo-culture-note">
+            <strong>Kearifan Luhur:</strong> Menuntut ilmu adalah ibadah tanpa henti. Capekmu hari ini dalam memahami pelajaran insyaAllah berbuah kebaikan berlimpah bagi keluarga dan bangsamu! 🤲
+          </div>
+        </div>
+
+        <!-- Card 3: Instagram Educational Meme -->
+        <div class="bento-card bento-meme">
+          <div class="ig-feed-header">
+            <div class="ig-author">
+              <div class="ig-avatar">dr</div>
+              <div>
+                <div class="ig-username">drbelajar.official</div>
+                <div class="ig-location">Ruang Belajar Virtual • Jakarta</div>
+              </div>
+            </div>
+            <i class="fa-solid fa-ellipsis" style="color: var(--text-light);"></i>
+          </div>
+
+          <div class="meme-content-box">
+            <span class="meme-tag">#RelatablePelajar #POV</span>
+            <p class="meme-joke">
+              <strong>Guru di sekolah:</strong> "Soalnya gampang kok anak-anak, cuma turunan fungsi trigonometri bertingkat lima..."<br><br>
+              <strong>Aku yang baru buka mata:</strong> 🗿🗿🗿 *otak langsung keluar mode shutdown*
+            </p>
+          </div>
+
+          <div class="ig-feed-footer">
+            <div class="ig-reactions">
+              <button class="reaction-btn" id="btnLikeMeme" onclick="toggleMemeLike(this)">
+                <i class="fa-regular fa-heart"></i> <span id="likeCountMeme">2,481</span>
+              </button>
+              <button class="reaction-btn" onclick="showToast('Link tersalin! Share ke temen bimbelmu!')">
+                <i class="fa-regular fa-paper-plane"></i> <span>Share</span>
+              </button>
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">
+              dr. Belajar Solusinya 😉
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 4: Audio Study Tip / Voice Note Simulation -->
+        <div class="bento-card bento-audio">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <strong style="font-size: 1.05rem;">Voice Note dari Kak Mentor</strong>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Tips 15 detik menghadapi kepanikan ujian</div>
+            </div>
+            <span class="banner-pill" style="background: #FEF3C7; color: #D97706; font-size: 0.72rem;">PODCAST MINI</span>
+          </div>
+
+          <div class="audio-player-sim">
+            <div class="play-bubble" id="playAudioBtn" onclick="toggleAudioSimulation()">
+              <i class="fa-solid fa-play" id="playIcon"></i>
+            </div>
+            <div class="audio-waves" id="waveBars">
+              <div class="wave-bar" style="height: 10px;"></div>
+              <div class="wave-bar" style="height: 18px;"></div>
+              <div class="wave-bar" style="height: 14px;"></div>
+              <div class="wave-bar" style="height: 22px;"></div>
+              <div class="wave-bar" style="height: 8px;"></div>
+              <div class="wave-bar" style="height: 16px;"></div>
+              <div class="wave-bar" style="height: 20px;"></div>
+              <div class="wave-bar" style="height: 12px;"></div>
+              <div class="wave-bar" style="height: 18px;"></div>
+              <div class="wave-bar" style="height: 10px;"></div>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);" id="audioTimer">0:15</span>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+            <em>"Jangan pernah takut salah pas latihan bareng dr. Belajar. Di sini kita belajar dari nol sampai kamu bilang 'Ooooh, gitu doang caranya!'."</em> — Kak Sarah, Tutor Kedokteran UI.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROGRAM & KELAS ONLINE SECTION (Filterable & Interactive Calculator)
+       ========================================================================== -->
+  <section class="courses-section" id="program-kelas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-book-open"></i> Pilihan Program</span>
+        <h2 class="section-title">Kelas Privat Online Sesuai Kebutuhanmu</h2>
+        <p class="section-subtitle">Pilih jenjang dan materi yang kamu butuhkan. Waktu belajar 100% fleksibel disesuaikan dengan aktivitas sekolahmu.</p>
+      </div>
+
+      <!-- Level Filter Buttons -->
+      <div class="course-filters">
+        <button class="filter-btn active" onclick="filterCourses('all', this)">Semua Jenjang</button>
+        <button class="filter-btn" onclick="filterCourses('sd', this)">SD / MI</button>
+        <button class="filter-btn" onclick="filterCourses('smp', this)">SMP / MTs</button>
+        <button class="filter-btn" onclick="filterCourses('sma', this)">SMA / SMK</button>
+        <button class="filter-btn" onclick="filterCourses('utbk', this)">UTBK-SNBT PTN</button>
+        <button class="filter-btn" onclick="filterCourses('spesial', this)">Kedokteran & Olimpiade</button>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid" id="courseContainer">
+
+        <!-- Course 1: SD/MI -->
+        <div class="course-card" data-category="sd">
+          <span class="course-tag">Jenjang Dasar</span>
+          <h3 class="course-title">Privat Ceria SD / MI</h3>
+          <p class="course-desc">Membangun fondasi numerasi, literasi membaca, dan sains dasar dengan pendekatan eksploratif & visual yang menyenangkan.</p>
+          <div class="course-pricing">
+            <span class="price-val">Rp 85rb</span>
+            <span class="price-sub">/ sesi pertemuan (60 menit)</span>
+          </div>
+          <ul class="course-features">
+            <li class="feature-item"><span class="feature-check">✓</span> 1 Tutor 1 Siswa (100% Personal)</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Pendampingan PR & Ulangan Harian</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Modul bergambar & kuis interaktif</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Laporan progres berkala ke orang tua</li>
+          </ul>
+          <button class="btn btn-secondary" onclick="openModalWithPlan('Privat Ceria SD / MI')">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+        <!-- Course 2: SMP/MTs -->
+        <div class="course-card" data-category="smp">
+          <span class="course-tag">Jenjang Menengah</span>
+          <h3 class="course-title">Mastery Konsep SMP</h3>
+          <p class="course-desc">Kuasai Matematika, IPA terpadu, dan Bahasa Inggris tanpa rasa terbebani. Menyiapkan persiapan asesmen sumatif & masuk SMA favorit.</p>
+          <div class="course-pricing">
+            <span class="price-val">Rp 110rb</span>
+            <span class="price-sub">/ sesi pertemuan (75 menit)</span>
+          </div>
+          <ul class="course-features">
+            <li class="feature-item"><span class="feature-check">✓</span> Pemahaman konsep no-rumus mati</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Bank soal HOTS terstandarisasi</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Recording sesi kelas otomatis</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Tanya jawab via WA kapan saja</li>
+          </ul>
+          <button class="btn btn-secondary" onclick="openModalWithPlan('Mastery Konsep SMP')">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+        <!-- Course 3: SMA/SMK (Featured) -->
+        <div class="course-card featured" data-category="sma">
+          <span class="featured-ribbon">⭐ PALING DIMINATI</span>
+          <span class="course-tag">Jenjang Atas</span>
+          <h3 class="course-title">Intensif Prestasi SMA</h3>
+          <p class="course-desc">Fokus pada Matematika Peminatan, Fisika, Kimia, Biologi, atau Ekonomi/Sosiologi untuk mengamankan nilai rapor & prestasi SNBP.</p>
+          <div class="course-pricing">
+            <span class="price-val">Rp 135rb</span>
+            <span class="price-sub">/ sesi pertemuan (90 menit)</span>
+          </div>
+          <ul class="course-features">
+            <li class="feature-item"><span class="feature-check">✓</span> Tutor pilihan dari jurusan linear</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Strategi pemetaan nilai rapor SNBP</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Modul ringkasan rumus pintar ala dr. Belajar</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Akses bank soal ujian semester</li>
+          </ul>
+          <button class="btn btn-primary" onclick="openModalWithPlan('Intensif Prestasi SMA')">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+        <!-- Course 4: UTBK/SNBT -->
+        <div class="course-card" data-category="utbk">
+          <span class="course-tag">Persiapan PTN</span>
+          <h3 class="course-title">Garansi Lolos UTBK-SNBT</h3>
+          <p class="course-desc">Drilling materi TPS, Literasi Bahasa Indonesia & Inggris, serta Penalaran Matematika dengan metode cepat dan penalaran analitis.</p>
+          <div class="course-pricing">
+            <span class="price-val">Rp 150rb</span>
+            <span class="price-sub">/ sesi pertemuan (90 menit)</span>
+          </div>
+          <ul class="course-features">
+            <li class="feature-item"><span class="feature-check">✓</span> Tryout Akbar berkala dengan IRT scoring</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Konsultasi pemilihan jurusan PTN 1-on-1</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Trik eliminasi jawaban pengecoh</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Akses 5.000+ arsip soal asli UTBK</li>
+          </ul>
+          <button class="btn btn-secondary" onclick="openModalWithPlan('Garansi Lolos UTBK-SNBT')">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+        <!-- Course 5: Kedokteran Spesial -->
+        <div class="course-card featured" data-category="spesial">
+          <span class="featured-ribbon">🩺 SPESIALISASI</span>
+          <span class="course-tag">Program Unggulan</span>
+          <h3 class="course-title">Klinik Masuk Kedokteran</h3>
+          <p class="course-desc">Bimbingan khusus calon mahasiswa Fakultas Kedokteran (FK UI, UGM, Unair, Unpad). Diajar langsung oleh dokter muda & mahasiswa FK berprestasi.</p>
+          <div class="course-pricing">
+            <span class="price-val">Rp 185rb</span>
+            <span class="price-sub">/ sesi pertemuan (90 menit)</span>
+          </div>
+          <ul class="course-features">
+            <li class="feature-item"><span class="feature-check">✓</span> Bedah soal MMI (Mini Medical Interview)</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Pendalaman Biologi & Kimia level lanjut</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Mentoring psikologi & mental kedokteran</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Jejaring alumni dokter se-Indonesia</li>
+          </ul>
+          <button class="btn btn-primary" onclick="openModalWithPlan('Klinik Masuk Kedokteran')">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+        <!-- Course 6: Olimpiade Sains (OSN) -->
+        <div class="course-card" data-category="spesial">
+          <span class="course-tag">Kompetisi Prestasi</span>
+          <h3 class="course-title">Olimpiade Sains (OSN / KSN)</h3>
+          <p class="course-desc">Pembinaan intensif menuju medali OSN tingkat Kabupaten, Provinsi, hingga Nasional untuk bidang Matematika, Fisika, Biologi, Kimia, & Astronomi.</p>
+          <div class="course-pricing">
+            <span class="price-val">Rp 195rb</span>
+            <span class="price-sub">/ sesi pertemuan (90 menit)</span>
+          </div>
+          <ul class="course-features">
+            <li class="feature-item"><span class="feature-check">✓</span> Dibimbing peraih medali OSN & IPhO/IMO</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Bedah silabus sains universitas</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Simulasi waktu ujian olimpiade</li>
+            <li class="feature-item"><span class="feature-check">✓</span> Sertifikat kepesertaan pembinaan</li>
+          </ul>
+          <button class="btn btn-secondary" onclick="openModalWithPlan('Olimpiade Sains (OSN)')">
+            Pilih Paket Ini
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Interactive Tuition Calculator -->
+      <div class="calculator-box">
+        <div>
+          <h3 class="calc-title">💡 Kalkulator Estimasi Paket Belajar</h3>
+          <p class="calc-desc">Hitung perkiraan investasi belajar sesuai jenjang dan jumlah sesi bulanan yang kamu inginkan. Dapatkan diskon otomatis untuk paket komplit!</p>
+          <div class="calc-inputs">
+            <div class="calc-field">
+              <label for="calcLevel">Pilih Jenjang Sekolah</label>
+              <select id="calcLevel" onchange="calculateTuition()">
+                <option value="85000">SD / MI (Rp 85rb/sesi)</option>
+                <option value="110000">SMP / MTs (Rp 110rb/sesi)</option>
+                <option value="135000" selected>SMA / SMK (Rp 135rb/sesi)</option>
+                <option value="150000">UTBK-SNBT PTN (Rp 150rb/sesi)</option>
+                <option value="185000">Kedokteran / Olimpiade (Rp 185rb/sesi)</option>
+              </select>
+            </div>
+            <div class="calc-field">
+              <label for="calcSessions">Jumlah Pertemuan / Bulan</label>
+              <select id="calcSessions" onchange="calculateTuition()">
+                <option value="4">4 Sesi (1x seminggu)</option>
+                <option value="8" selected>8 Sesi (2x seminggu - Diskon 10%)</option>
+                <option value="12">12 Sesi (3x seminggu - Diskon 15%)</option>
+                <option value="16">16 Sesi (Intensif - Diskon 20%)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result-panel">
+          <div class="result-label">Total Investasi Bulanan</div>
+          <div class="result-price" id="tuitionOutput">Rp 972.000</div>
+          <div class="result-note" id="tuitionNote">Termasuk Diskon Paket 10% + Free Konsul PR 24 Jam</div>
+          <button class="btn btn-primary btn-sm" style="width: 100%;" onclick="openModal('modalDaftar')">
+            <i class="fa-solid fa-cart-shopping"></i> Ambil Paket Ini
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TUTOR HEBAT SECTION ("Dokter Belajar Anda")
+       ========================================================================== -->
+  <section class="tutor-section" id="tutor-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-user-tie"></i> Mentor Inspiratif</span>
+        <h2 class="section-title">Kenalan Sama "Dokter Belajar" Favoritmu</h2>
+        <p class="section-subtitle">Bukan dosen killer atau guru galak! Mereka adalah kakak-kakak berprestasi yang seru, empati tinggi, dan paham betul rasanya jadi pelajar Gen-Z.</p>
+      </div>
+
+      <div class="tutor-grid">
+        
+        <!-- Tutor 1: dr. Sarah -->
+        <div class="tutor-card">
+          <div class="tutor-photo-wrap">
+            <img src="assets/images/tutor-dr-belajar.jpg" alt="Kak Sarah - Tutor Biologi & Kedokteran" class="tutor-photo">
+            <span class="tutor-univ-badge"><i class="fa-solid fa-graduation-cap"></i> Kedokteran UI</span>
+          </div>
+          <div class="tutor-info">
+            <h3 class="tutor-name">dr. Sarah Ramadhani</h3>
+            <span class="tutor-subject">Biologi Kedokteran & Sains Dasar</span>
+            <p class="tutor-bio">
+              <em>"Materi anatomi atau genetika itu asyik kalau kita analogikan dengan cerita sehari-hari. Nggak ada istilah ngafal buta di kelas kita!"</em>
+            </p>
+            <div class="tutor-stats">
+              <span>⭐ 4.99 (640+ Jam)</span>
+              <span style="color: var(--emerald-green);"><i class="fa-solid fa-check"></i> 89 Siswa Tembus FK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutor 2: Kak Farhan -->
+        <div class="tutor-card">
+          <div class="tutor-photo-wrap">
+            <img src="assets/images/hero-mascot.jpg" alt="Kak Farhan - Tutor Matematika ITB" class="tutor-photo" style="object-position: top;">
+            <span class="tutor-univ-badge"><i class="fa-solid fa-graduation-cap"></i> STEI ITB</span>
+          </div>
+          <div class="tutor-info">
+            <h3 class="tutor-name">Farhan Pratama, S.T.</h3>
+            <span class="tutor-subject">Matematika Peminatan & Penalaran UTBK</span>
+            <p class="tutor-bio">
+              <em>"Matematika itu bukan musuh. Cuma perlu diurai polanya seperti game puzzle logika. Sekali klik, soal serumit apa pun terasa renyah!"</em>
+            </p>
+            <div class="tutor-stats">
+              <span>⭐ 4.97 (820+ Jam)</span>
+              <span style="color: var(--emerald-green);"><i class="fa-solid fa-check"></i> Medali OSN Matematika</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tutor 3: Kak Annisa -->
+        <div class="tutor-card">
+          <div class="tutor-photo-wrap">
+            <img src="assets/images/banner-event.jpg" alt="Kak Annisa - Tutor Fisika & Kimia UGM" class="tutor-photo">
+            <span class="tutor-univ-badge"><i class="fa-solid fa-graduation-cap"></i> Teknik Kimia UGM</span>
+          </div>
+          <div class="tutor-info">
+            <h3 class="tutor-name">Annisa Larasati</h3>
+            <span class="tutor-subject">Kimia, Fisika & TPS Skolastik</span>
+            <p class="tutor-bio">
+              <em>"Prinsip mengajar saya: ramah, nggak gampang menghakimi kalau murid belum paham, dan selalu sediakan 'shortcut' konsep yang elegan."</em>
+            </p>
+            <div class="tutor-stats">
+              <span>⭐ 4.98 (510+ Jam)</span>
+              <span style="color: var(--emerald-green);"><i class="fa-solid fa-check"></i> Skor UTBK 780+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIAL SECTION (Instagram Story & WhatsApp Style)
+       ========================================================================== -->
+  <section class="testi-section" id="testimoni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill"><i class="fa-solid fa-heart"></i> Cerita Bahagia</span>
+        <h2 class="section-title">Kata Mereka yang Sudah "Belajar Bermakna"</h2>
+        <p class="section-subtitle">Ratusan siswa dari Sabang sampai Merauke yang tadinya malas belajar, kini berhasil tembus sekolah dan kampus impian mereka.</p>
+      </div>
+
+      <div class="testi-grid">
+        
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Sumpah, dulu aku paling alergi sama Fisika dan Kimia. Di sekolah selalu remed. Tapi pas dibimbing Kak Sarah di dr. Belajar, penjelasannya santai banget nggak bikin insecure. Alhamdulillah UTBK kemarin tembus FK UNAIR!"
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">NA</div>
+            <div class="author-meta">
+              <h4>Nabila Az-Zahra</h4>
+              <p>Lolos Pendidikan Dokter UNAIR 2024 (Alumni SMAN 3 Bandung)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Sebagai orang tua yang sibuk bekerja, saya sangat terbantu dengan dr. Belajar. Tutornya ramah, santun, dan selalu memberi laporan mingguan tentang perkembangan anak saya. Nilai rapor naik signifikan!"
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar" style="background: var(--grad-purple-pink);">IB</div>
+            <div class="author-meta">
+              <h4>Ibu Rina Hendrawati</h4>
+              <p>Orang Tua Siswa Kelas 9 SMP Al-Azhar Jakarta</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Vibes belajarnya beneran kayak lagi curhat sama kakak tingkat yang jenius. Nggak ada rasa kaku. Bikin jadwalnya juga fleksibel banget, pas buat aku yang aktif di OSIS dan ekskul."
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #10B981 0%, #0284C7 100%);">DH</div>
+            <div class="author-meta">
+              <h4>Dimas Hendra</h4>
+              <p>Lolos Teknik Elektro ITB (Alumni SMAN 8 Jakarta)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CALL TO ACTION BANNER
+       ========================================================================== -->
+  <section class="container">
+    <div class="cta-banner">
+      <h2 class="cta-title">Siap Rasakan "Belajar Bermakna" Bersama dr. Belajar?</h2>
+      <p class="cta-sub">
+        Jangan biarkan rasa bingung dan cemas menghambat potensimu. Mulai sesi pertamamu hari ini dengan garansi kecocokan tutor!
+      </p>
+      <div class="cta-btn-group">
+        <button class="btn btn-secondary btn-lg" onclick="openModal('modalDaftar')">
+          <i class="fa-solid fa-user-check"></i> Daftar Kelas
+        </button>
+        <button class="btn btn-trial btn-lg" onclick="openModalWithPlan('Free Trial Class (1x Sesi Percobaan Gratis)')">
+          <span class="trial-badge">GRATIS</span>
+          <i class="fa-solid fa-gift"></i> Free Trial Class
+        </button>
+        <button class="btn btn-whatsapp btn-lg" onclick="window.open('https://wa.me/6281234567890?text=Halo%20Admin%20dr.%20Belajar,%20saya%20mau%20klaim%20Free%20Trial%20Class', '_blank')">
+          <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+        </button>
+        <button class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.2); color: white; border-color: rgba(255,255,255,0.4);" onclick="openModal('modalTutor')">
+          <i class="fa-solid fa-handshake"></i> Gabung Tim Tutor
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (Nuansa Kebudayaan & Nilai Indonesia)
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="logo-badge" style="width: 40px; height: 40px; font-size: 1.2rem;">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title" style="font-size: 1.4rem; color: white; -webkit-text-fill-color: white;">dr. Belajar</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Lembaga pendidikan privat online yang berfokus mendampingi pelajar Indonesia mencapai pemahaman materi yang hakiki, terarah, dan menyenangkan.
+          </p>
+          <div class="indo-pride-badge">
+            <i class="fa-solid fa-heart" style="color: #EF4444;"></i>
+            <span>Didedikasikan untuk Kecerdasan Generasi Nusantara 🇮🇩</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Program Belajar</h4>
+          <ul class="footer-links">
+            <li><a href="#program-kelas">Privat SD & MI</a></li>
+            <li><a href="#program-kelas">Mastery SMP</a></li>
+            <li><a href="#program-kelas">Prestasi SMA & Rapor</a></li>
+            <li><a href="#program-kelas">Intensif UTBK-SNBT</a></li>
+            <li><a href="#program-kelas">Klinik Kedokteran</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Fitur & Komunitas</h4>
+          <ul class="footer-links">
+            <li><a href="#pengumuman">Papan Pengumuman</a></li>
+            <li><a href="#pojok-genz">Mood Booster Gen-Z</a></li>
+            <li><a href="#tutor-section">Profil Tutor</a></li>
+            <li><a href="#testimoni">Kisah Siswa</a></li>
+            <li><a href="javascript:void(0)" onclick="openModal('modalTutor')">Karir Tutor (Oprec)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak & Bantuan</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/6281234567890" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0812-3456-7890</a></li>
+            <li><a href="mailto:halo@drbelajar.id"><i class="fa-regular fa-envelope"></i> halo@drbelajar.id</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> @drbelajar.official</a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i> @drbelajar.edukasi</a></li>
+            <li><span style="font-size: 0.85rem; color: #64748B;">Operasional: Senin - Minggu (08.00 - 21.00 WIB)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 dr. Belajar Indonesia. Hak Cipta Dilindungi. Mengabdi untuk Pendidikan Bermakna.</p>
+        <p>Dirancang dengan ❤️ & Semangat Edukasi Kreatif</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: DAFTAR KELAS PRIVAT
+       ========================================================================== -->
+  <div class="modal-overlay" id="modalDaftar">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('modalDaftar')">&times;</button>
+      <h3 class="modal-title">Daftar Kelas Privat 🚀</h3>
+      <p class="modal-subtitle">Isi data di bawah ini, tim akademik dr. Belajar akan langsung menghubungi untuk konsultasi jadwal & tutor terbaik.</p>
+
+      <form id="formDaftarKelas" onsubmit="handleRegistrationSubmit(event)">
+        <div class="form-group">
+          <label for="regNamaSiswa">Nama Lengkap Siswa</label>
+          <input type="text" id="regNamaSiswa" placeholder="Contoh: Faris Al-Fatih" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regJenjang">Jenjang Pendidikan / Kelas</label>
+          <select id="regJenjang" required>
+            <option value="Free Trial Class (1x Sesi Percobaan Gratis)" selected>🎁 Free Trial Class (1x Sesi Percobaan Gratis)</option>
+            <option value="SD">SD / MI</option>
+            <option value="SMP">SMP / MTs</option>
+            <option value="SMA">SMA / SMK (Kelas 10-12)</option>
+            <option value="UTBK">Persiapan UTBK-SNBT / Gap Year</option>
+            <option value="Kedokteran">Persiapan Masuk Kedokteran (IUP/MMI)</option>
+            <option value="Olimpiade">Olimpiade Sains (OSN)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="regMapel">Mata Pelajaran yang Diinginkan</label>
+          <input type="text" id="regMapel" placeholder="Contoh: Matematika & Fisika" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regWhatsApp">Nomor WhatsApp (Aktif)</label>
+          <input type="tel" id="regWhatsApp" placeholder="081234567890" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regCatatan">Catatan Khusus / Target Belajar</label>
+          <textarea id="regCatatan" rows="2" placeholder="Contoh: Mau persiapan ujian semester dan perbaikan nilai rapor"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+          <i class="fa-solid fa-paper-plane"></i> Kirim Pendaftaran Sekarang
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: GABUNG JADI TUTOR (OPREC)
+       ========================================================================== -->
+  <div class="modal-overlay" id="modalTutor">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('modalTutor')">&times;</button>
+      <h3 class="modal-title">Gabung Jadi Tutor Hebat 🩺</h3>
+      <p class="modal-subtitle">Jadilah inspirasi bagi adik-adik pelajar. Mengajar 100% online dari mana saja dengan insentif memuaskan.</p>
+
+      <form id="formOprecTutor" onsubmit="handleTutorSubmit(event)">
+        <div class="form-group">
+          <label for="tutorNama">Nama Lengkap & Gelar</label>
+          <input type="text" id="tutorNama" placeholder="Contoh: Aisyah Putri, S.Si." required>
+        </div>
+
+        <div class="form-group">
+          <label for="tutorUniv">Almamater / Universitas & Jurusan</label>
+          <input type="text" id="tutorUniv" placeholder="Contoh: Universitas Indonesia - Farmasi" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tutorBidang">Bidang Studi yang Dikuasai</label>
+          <input type="text" id="tutorBidang" placeholder="Contoh: Kimia SMA & Penalaran UTBK" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tutorKontak">No. WhatsApp</label>
+          <input type="tel" id="tutorKontak" placeholder="081xxxxxxxxx" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tutorCV">Link CV / Portofolio (Google Drive / LinkedIn)</label>
+          <input type="url" id="tutorCV" placeholder="https://linkedin.com/in/... atau link drive" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; background: #10B981; border: none;">
+          <i class="fa-solid fa-check-double"></i> Submit Berkas Pendaftaran
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION
+       ========================================================================== -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fa-solid fa-circle-check" style="color: #10B981;"></i>
+    <span id="toastMessage">Notifikasi berhasil!</span>
+  </div>
+
+  <!-- Javascript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -346,7 +346,7 @@ function handleRegistrationSubmit(e) {
   );
 
   setTimeout(() => {
-    window.open(`https://wa.me/6281234567890?text=${waText}`, '_blank');
+    window.open(`https://wa.me/628979121227?text=${waText}`, '_blank');
   }, 1200);
 
   e.target.reset();
